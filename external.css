@@ -1,0 +1,585 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "square1 square2 square3"
+    "long1 long1 long1"
+    "long2 long2 long2";
+    gap: 20px;
+}
+.link {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+    @media (min_width: 1400px) and (max-width:1680px){
+        .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30% 65% 5%;
+        grid-template-areas: "square1 square2 square3"
+        "long1 long1 long1"
+        "long2 long 2 long2";
+        }
+    }
+    @media (max-width:480px)
+        {
+        
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 30% 65% 5%;
+                grid-template-areas: "square1 square2 square3"
+                "long1 long1 long1"
+                "long2 long 2 long2";}
+        .spacepeople {
+            block-size: 2rem;
+            margin-top: 460px;
+    margin-left: -150px;
+        }
+        .circles {
+            font-size: 1rem;
+        }
+        
+} 
+    @media (min-width: 481px) and (max-width: 1024px){
+        .container {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 30% 65% 5%;
+            grid-template-areas: "square1 square2 square3"
+            "long1 long1 long1"
+            "long2 long 2 long2";}
+    .spacepeople {
+        block-size: 2rem;
+        margin-top: 460px;
+margin-left: -150px;
+    }
+    .circles {
+        font-size: 1rem;
+    }
+    }
+.square1 {
+    grid-area: square1;
+    background-color: rgb(18, 110, 110);
+    width: 100%;
+    height: 450px;
+}
+.square2 {
+    grid-area: square2;
+    background-color: rgb(18, 110, 110);
+}
+.square3 {
+    grid-area: square3;
+    background-color: rgb(18, 110, 110);
+}
+.long1 {
+    grid-area: long1;
+    background-color: rgb(18, 110, 110);
+}
+.long2 {
+    grid-area: long2;
+    background-color: greenyellow;
+    height: 20px;
+}
+.circle1 {
+    border-radius: 50%;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+}
+.circle1 {
+    position: relative;
+    bottom: 1300px;
+    left: 50px;
+    z-index: 1;
+}
+.circle2 {
+    border-radius: 50%;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 420px;
+    left: 50px;
+    z-index: 1;
+}
+.circle3 {
+    display: grid;
+    border-radius: 50%;
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 1300px;
+    left: 400px;
+    z-index: 1;
+}
+.circle4 {
+    border-radius: 50%;
+    background-color: pink;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 1200px;
+    left: 500px;
+    z-index: 1;
+}
+.circle5 {
+    border-radius: 50%;
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 1200px;
+    left: 300px;
+    z-index: 1;
+}
+
+.circle6 {
+    border-radius: 50%;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 1700px;
+    left: 700px;
+    z-index: 1;
+}
+.triangle1 {
+        width: 0;
+        height: 0;
+        border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 550px solid;
+    position: relative;
+    bottom: 1470px;
+    left: 950px;
+    z-index: 1;
+    color: green;
+}
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+border-right: 150px solid transparent;
+border-bottom: 300px solid;
+position: relative;
+    bottom: 1770px;
+    left: 1200px;
+    z-index: 2;
+    color: yellowgreen;
+}
+
+.space1 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1795px;
+        left: 200px;
+        z-index: 3;
+      }
+      .space2 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1800px;
+        left: 300px;
+        z-index: 3;
+      }
+      .space3 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1805px;
+        left: 400px;
+      }
+      .space4 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1810px;
+        left: 500px;
+      }
+      .space5 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1815px;
+        left: 600px;
+      }
+      .space6 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #a59b9b,
+        0 var(--block-size) 0 var(--block-size) #a59b9b,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 3) 0 0 0 #a59b9b,
+        calc(var(--block-size) * 4) 0 0 0 #a59b9b,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #a59b9b,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #a59b9b,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #a59b9b,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #a59b9b;
+        background: #a59b9b;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1820px;
+        left: 700px;
+      }
+      .space7 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #333,
+        0 var(--block-size) 0 var(--block-size) #333,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -4) 0 0 0 #333,
+        calc(var(--block-size) * -3) 0 0 0 #333,
+        calc(var(--block-size) * 3) 0 0 0 #333,
+        calc(var(--block-size) * 4) 0 0 0 #333,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #333,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #333;
+        background: #333;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1825px;
+        left: 800px;
+      }
+      .space8 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #333,
+        0 var(--block-size) 0 var(--block-size) #333,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -4) 0 0 0 #333,
+        calc(var(--block-size) * -3) 0 0 0 #333,
+        calc(var(--block-size) * 3) 0 0 0 #333,
+        calc(var(--block-size) * 4) 0 0 0 #333,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #333,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #333;
+        background: #333;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1830px;
+        left: 900px;
+      }
+      .space9 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #333,
+        0 var(--block-size) 0 var(--block-size) #333,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -4) 0 0 0 #333,
+        calc(var(--block-size) * -3) 0 0 0 #333,
+        calc(var(--block-size) * 3) 0 0 0 #333,
+        calc(var(--block-size) * 4) 0 0 0 #333,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #333,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #333;
+        background: #333;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1835px;
+        left: 1000px;
+        z-index: 3;
+      }
+      .space10 {
+        --block-size: 5px;
+      
+        box-shadow: 0 0 0 var(--block-size) #333,
+        0 var(--block-size) 0 var(--block-size) #333,
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #333,
+        calc(var(--block-size) * -4) 0 0 0 #333,
+        calc(var(--block-size) * -3) 0 0 0 #333,
+        calc(var(--block-size) * 3) 0 0 0 #333,
+        calc(var(--block-size) * 4) 0 0 0 #333,
+        calc(var(--block-size) * -5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 4) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * 5) var(--block-size) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #333,
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #333,
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #333,
+        var(--block-size) calc(var(--block-size) * 4) 0 0 #333,
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #333;
+        background: #333;
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+        position: relative;
+        bottom: 1840px;
+        left: 1100px;
+        z-index: 3;
+      }
+      
